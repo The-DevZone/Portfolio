@@ -1,18 +1,18 @@
 
+import About from "./component/about/About"
+import Footer from "./component/footer/Footer"
 import Navbar from "./component/Navbar"
 
-const navbarItem = {
-  About: "About",
-  Skills: "Skills",
-  Project: "Projects"
-  
-}
+
 
 const App = () => {
 
   return (
     <>
-      <Navbar navbarItem={navbarItem} />
+      <Navbar />
+      <About />
+      <Footer />
+
     </>
   )
 }
