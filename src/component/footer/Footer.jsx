@@ -1,4 +1,5 @@
 import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram, FaYoutube } from "react-icons/fa";
+import { SocialIcon } from 'react-social-icons'
 
 
 import React from 'react'
@@ -39,16 +40,25 @@ const Footer = () => {
                 {/* Social Media Icons - Responsive */}
                 <div className="flex flex-wrap justify-center space-x-4 mt-6">
                     {[
-                        { icon: <FaFacebook />, link: "https://www.facebook.com/tarun.kaushik.3511041/" },
-                        { icon: <FaTwitter />, link: "https://twitter.com/CodingMaster6?s=09" },
-                        { icon: <FaLinkedin />, link: "https://www.linkedin.com/in/tarun-kaushik-553b441a4" },
-                        { icon: <FaInstagram />, link: "https://www.instagram.com/coding_.master/" },
-                        { icon: <FaYoutube />, link: "https://www.youtube.com/codingmasteryt" },
-                    ].map((item) => (
-                        <Link  >
-                        </Link>
+                        // "https://www.facebook.com/tarun.kaushik.3511041/",
+                        // "https://twitter.com/CodingMaster6?s=09",
+                        "https://www.linkedin.com/in/rohit-verma-b07ba3242/",
+                        "https://www.instagram.com/coder_rohit_verma_21/",
+                        // "https://www.youtube.com/codingmasteryt"
+                        // { icon: <FaFacebook />, link:  "https://www.facebook.com/tarun.kaushik.3511041/" },
+                        // { icon: <FaTwitter />, link:   "https://twitter.com/CodingMaster6?s=09" },
+                        // { icon: <FaLinkedin />, link:  "https://www.linkedin.com/in/tarun-kaushik-553b441a4" },
+                        // { icon: <FaInstagram />, link: "https://www.instagram.com/coding_.master/" },
+                        // { icon: <FaYoutube />, link:   "https://www.youtube.com/codingmasteryt" },
+                    ].map((item, index) => (
+                        < SocialIcon
+                            key={index}
+                            url={item}
+                            target="_blank"
+                            style={{ width: "50px" }}
+                        />
                     ))
-                    
+
                     }
                 </div>
 
